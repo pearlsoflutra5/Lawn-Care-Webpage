@@ -1,0 +1,173 @@
+/* 
+   Cox Lawn Care
+   Kacie Rae
+   10-16-18
+   Stylesheet for index.html
+ */
+
+/* reset styles */
+html {
+   font-size: 16px;
+}
+a, article, body, div, figcaption, figure, footer, header, h1, h2, h3, img, nav, p {
+   border: 0;
+   padding: 0;
+   margin: 0;
+}
+img {
+   max-width: 100%;
+   height: auto;
+   width: auto;
+}
+
+head {
+   text-align: center;
+   line-height:1.7;
+   font-size: 300; 
+}
+
+/* body */
+p.header{
+   text-align: center;
+   line-height:1.7;
+   font-size: 300;
+}
+
+body {
+   margin: 0 auto;
+   font-family: Arial, Helvetica, sans-serif;
+}
+p {
+   font-size: 1.3em;
+   line-height: 1.6em;
+}
+a:link {
+   color: black;
+}
+a:visited {
+   color: red; /* don't know what this does either*/
+}
+/* skip navigation link */
+p.skipnavigation a {
+   position: absolute;
+   left: -10000px;
+}
+p.skipnavigation a:focus {
+   color: red;
+   background-color: blue;
+   top: 0.4em;
+   left: auto;
+   right: 0.4em;
+   z-index: 2;
+}
+
+/* header section */
+h1 {
+   text-align: center;
+   font-family: Bitter, "Times New Roman", Times, serif;
+   font-weight: 700;
+   color: ivory;
+   background-color: white;
+   font-size: 2.4em;
+}
+
+/* site navigation bar */
+nav.sitenavigation {
+   color: yellow;
+   text-align: center;
+   background-color: #006500; /*this changes nav bar color*/
+}
+nav.sitenavigation p {
+   margin: 0.3em 0.5em;
+   display: inline-block;
+}
+nav.sitenavigation a:link {  
+   text-decoration: none;
+   color: black; /* this color changes words of about us, home, services */
+}
+nav.sitenavigation a:visited {
+  color: grey; /* this color changes after you click on heading link do*/
+}
+nav.sitenavigation a:hover, nav.sitenavigation a:focus {
+   color: white; /* this changes color over hover*/
+}
+
+/* main content */
+article {
+   margin: 0 auto;
+   padding: 1.4em;
+   background-color: yellow; /* still figuiring out color names*/
+   background: url("images/lake.jpg");}
+
+article div {
+   max-width: 800px;
+   margin: 0 auto;
+   padding: 0 3% 1em;
+   background-color: ivory;
+   overflow: auto;}
+h2 {
+   padding: 0.4em 0.4em 0;
+   text-align: center;
+   font-family: Bitter, "Times New Roman", Times, serif;
+   font-size: 2em;
+   font-weight: 700;
+}
+h3 {
+   margin-top: 1.4em;
+   font-size: 1.6em;
+   font-family: Bitter, "Times New Roman", Times, serif;
+   font-weight: 700;
+   clear: both;
+}
+article p {
+   padding-top: 1em;
+}
+article p.pullquote {
+   font-size: 1.7em;
+} 
+article p.imagemap {
+   text-align: center;
+}
+article p.imagemap img {
+   border: 1px solid black;
+   max-width: none;
+}
+
+/* footer section */
+article figure {
+   max-width: 100%;
+   margin-left: 2em;
+   float: right;
+}
+article figure.example {
+   margin-top: 2em;
+}
+article figcaption {
+   text-align: center;
+}
+footer {
+   padding: 0.6em;
+   background-color: #568203;/* footer color */ 
+   color: black; /*footer text color*/
+   text-align: center;
+}
+.accent {
+   font-weight: bold;
+}
+
+/* print styles */
+@media print {
+   body, h1, article, footer {
+      color: rgb(0,0,0);
+      background-color: rgb(255,255,255);
+   }
+   body {
+      max-width: 100%;
+   }
+   nav {
+      display: none;
+   }
+}
+@page {
+   margin: 0.75in;
+}
