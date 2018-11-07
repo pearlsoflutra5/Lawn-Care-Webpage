@@ -10,10 +10,11 @@ html {
    font-size: 16px;
 }
 a, article, body, div, figcaption, figure, footer, header, h1, h2, h3, img, nav, p {
-   border: 0;
+   border: .5px;
    padding: 0;
    margin: 0;
 }
+
 img {
    max-width: 100%;
    height: auto;
@@ -22,7 +23,7 @@ img {
 
 head {
    text-align: center;
-   line-height:1.7;
+   line-height: 1.4;
    font-size: 300; 
 }
 
@@ -30,7 +31,8 @@ head {
 p.header{
    text-align: center;
    line-height:1.7;
-   font-size: 300;
+   font-size: 30px;
+   padding: .1em;
 }
 
 body {
@@ -45,7 +47,7 @@ a:link {
    color: black;
 }
 a:visited {
-   color: red; /* don't know what this does either*/
+   color: gray; /* don't know what this does either*/
 }
 /* skip navigation link */
 p.skipnavigation a {
@@ -54,10 +56,10 @@ p.skipnavigation a {
 }
 p.skipnavigation a:focus {
    color: red;
-   background-color: blue;
+   background-color: white;
    top: 0.4em;
    left: auto;
-   right: 0.4em;
+   right: .04em;
    z-index: 2;
 }
 
@@ -78,7 +80,7 @@ nav.sitenavigation {
    background-color: #006500; /*this changes nav bar color*/
 }
 nav.sitenavigation p {
-   margin: 0.3em 0.5em;
+   margin: .3em .5em;
    display: inline-block;
 }
 nav.sitenavigation a:link {  
@@ -86,23 +88,26 @@ nav.sitenavigation a:link {
    color: black; /* this color changes words of about us, home, services */
 }
 nav.sitenavigation a:visited {
-  color: grey; /* this color changes after you click on heading link do*/
+   color: #55d555; /* this color changes after you click on heading link do*/
+   text-shadow: : -4px  0 white, 0 4px white, 4px 0 white, 0 -4px white;
 }
 nav.sitenavigation a:hover, nav.sitenavigation a:focus {
    color: white; /* this changes color over hover*/
 }
 
 /* main content */
-article {
+article { /* background on all other webpages other than index*/
    margin: 0 auto;
-   padding: 1.4em;
-   background-color: yellow; /* still figuiring out color names*/
-   background: url("images/lake.jpg");}
-
+   background-color: yellow;
+  
+   /*padding: 1.4em; puts space between nav bar and article box*/
+   /*background: url("images/lake.jpg" changes background imagr*/
+   }   
+   
 article div {
    max-width: 800px;
    margin: 0 auto;
-   padding: 0 3% 1em;
+   padding: 1.4em;
    background-color: ivory;
    overflow: auto;}
 h2 {
@@ -113,11 +118,15 @@ h2 {
    font-weight: 700;
 }
 h3 {
-   margin-top: 1.4em;
+   margin-top: .6em;
    font-size: 1.6em;
    font-family: Bitter, "Times New Roman", Times, serif;
    font-weight: 700;
    clear: both;
+}
+li {
+   font-size: 18px:
+   padding: 1em;
 }
 article p {
    padding-top: 1em;
@@ -146,8 +155,8 @@ article figcaption {
    text-align: center;
 }
 footer {
-   padding: 0.6em;
-   background-color: #568203;/* footer color */ 
+   padding: .6em;
+   background-color: #55d555;/* footer color */ 
    color: black; /*footer text color*/
    text-align: center;
 }
