@@ -9,8 +9,8 @@
 html {
    font-size: 16px;
 }
-a, article, body, div, figcaption, figure, footer, header, h1, h2, h3, img, nav, p {
-   border: .5px;
+a, article, body, div, figcaption, figure, footer, header, h1, h2, h3, img, nav, p, li {
+   border: 0;
    padding: 0;
    margin: 0;
 }
@@ -19,6 +19,12 @@ img {
    max-width: 100%;
    height: auto;
    width: auto;
+}
+header {
+   padding: 0;
+   background-color: #55d555;/* footer color */ 
+   color: black; /*footer text color*/
+   text-align: center;
 }
 
 head {
@@ -43,6 +49,10 @@ p {
    font-size: 1.3em;
    line-height: 1.6em;
 }
+li {
+   font-size: 1.3em;
+   line-height: 1.4em;
+}
 a:link {
    color: black;
 }
@@ -53,6 +63,8 @@ a:visited {
 p.skipnavigation a {
    position: absolute;
    left: -10000px;
+   font-size: 40px;
+   color: black;
 }
 p.skipnavigation a:focus {
    color: red;
@@ -68,8 +80,8 @@ h1 {
    text-align: center;
    font-family: Bitter, "Times New Roman", Times, serif;
    font-weight: 700;
-   color: ivory;
-   background-color: white;
+   color: black;
+   background-color: yellow;
    font-size: 2.4em;
 }
 
@@ -85,7 +97,7 @@ nav.sitenavigation p {
 }
 nav.sitenavigation a:link {  
    text-decoration: none;
-   color: black; /* this color changes words of about us, home, services */
+   color: #55d555; /* this color changes words of about us, home, services */
 }
 nav.sitenavigation a:visited {
    color: #55d555; /* this color changes after you click on heading link do*/
@@ -111,7 +123,7 @@ article div {
    background-color: ivory;
    overflow: auto;}
 h2 {
-   padding: 0.4em 0.4em 0;
+   padding: .4em 0.4em 0;
    text-align: center;
    font-family: Bitter, "Times New Roman", Times, serif;
    font-size: 2em;
@@ -130,6 +142,9 @@ li {
 }
 article p {
    padding-top: 1em;
+}
+article li {
+   padding-top: .25em;
 }
 article p.pullquote {
    font-size: 1.7em;
@@ -156,8 +171,8 @@ article figcaption {
 }
 footer {
    padding: .6em;
-   background-color: #55d555;/* footer color */ 
-   color: black; /*footer text color*/
+   background-color: #006500; /*#55d555 footer color */ 
+   color: #55d555; /*footer text color*/
    text-align: center;
 }
 .accent {
@@ -180,3 +195,4 @@ footer {
 @page {
    margin: 0.75in;
 }
+
