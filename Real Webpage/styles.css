@@ -28,6 +28,7 @@ header {
 }
 
 head {
+   padding: 0;
    text-align: center;
    line-height: 1.4;
    font-size: 300; 
@@ -60,28 +61,58 @@ a:visited {
    color: gray; /* don't know what this does either*/
 }
 /* skip navigation link */
+
+p.skipnavigation a {
+   left:-999px;
+   position:absolute;
+   top:4px;
+   width:10px;
+   height:1px;
+   overflow:hidden;
+   z-index:-999;
+}
+p.skipnavigation a {
+   color: black;
+   background-color:#55d555;
+   left: 3px;
+   top: 27px;
+   width: 20%;
+   height: auto;
+   overflow:auto;
+   /*margin: 10px 35%; where it is on the page/ centered */
+   padding: 1px; /* how much space is around words*/
+   border-radius: 1px;
+   border:2px solid black;
+   text-align:center;
+   font-size: 18px;
+   z-index:999;
+}
+p.skiptnavigation a:focus{
+   color: 
+}
 p.skipnavigation a {
    position: absolute;
-   left: -10000px;
-   font-size: 40px;
+   font-size: 20px;
    color: black;
 }
 p.skipnavigation a:focus {
-   color: red;
+   color: white;
    background-color: white;
-   top: 0.4em;
-   left: auto;
+   
+   
    right: .04em;
    z-index: 2;
 }
 
+
 /* header section */
 h1 {
+   top: center;
    text-align: center;
    font-family: Bitter, "Times New Roman", Times, serif;
    font-weight: 700;
    color: black;
-   background-color: yellow;
+   background-color: green;
    font-size: 2.4em;
 }
 
@@ -110,7 +141,7 @@ nav.sitenavigation a:hover, nav.sitenavigation a:focus {
 /* main content */
 article { /* background on all other webpages other than index*/
    margin: 0 auto;
-   background-color: yellow;
+   background-color: #55d555;
   
    /*padding: 1.4em; puts space between nav bar and article box*/
    /*background: url("images/lake.jpg" changes background imagr*/
